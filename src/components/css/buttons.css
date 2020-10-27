@@ -1,0 +1,37 @@
+.button-panel {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-rows: 90px;
+    grid-gap: 25px 5px;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+}
+
+.button-panel span {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    background: #131419;
+    font-size: 30px;
+    width: 90px;
+    height: 90px;
+    border: 0px solid transparent;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+}
+
+
+.button-panel span:active {
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.button-panel span sup {
+    font-size: 15px;
+    margin-top: -15px;
+}
